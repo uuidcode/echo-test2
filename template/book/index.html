@@ -1,0 +1,9 @@
+{{define "content"}}
+<h1>Content</h1>
+<pre>
+{{range .bookList}}
+    {{.BookId}} {{.Name}}
+{{end}}
+</pre>
+{{include "includes/greeting"}}
+{{end}}

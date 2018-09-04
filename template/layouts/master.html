@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>{{.title}}</title>
+</head>
+
+<body>
+{{block "head" .}}
+Default head content! (master.html)
+{{end}}
+<hr>
+{{template "content" .}}
+<hr>
+{{block "foot" .}}Default foot content! (master.html){{end}}
+</body>
+</html>
